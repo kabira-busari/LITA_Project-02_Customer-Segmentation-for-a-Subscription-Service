@@ -45,7 +45,7 @@ The Excel analysis aims to uncover subscription patterns, including the populari
 ### 3 Key Reports
 #### 3.1 Subscription Types by Popularity
 
-![Subscription Type by Popularity]()
+![Subscription Type by Popularity](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/1.png?raw=true)
 
 This report highlights customer preferences for each subscription type:
 - Basic subscription is the most popular, followed by Premium and Standard.
