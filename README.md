@@ -61,7 +61,7 @@ This analysis shows the total revenue by subscription type:
 
 #### 3.3 Subscription Duration by Type
 
-![Subscription Duration by Type]()
+![Subscription Duration by Type](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/Average%20Subscription%20Duration%20by%20Subscription%20Type%20Chart.png?raw=true)
 
 This chart visualizes the average subscription duration by type:
 - All types have a similar average duration of around 12 months.
