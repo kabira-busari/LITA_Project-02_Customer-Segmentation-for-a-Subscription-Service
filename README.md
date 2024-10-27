@@ -69,14 +69,14 @@ This chart visualizes the average subscription duration by type:
 
 #### 3.4 Subscriptions by Region
 
-![Subscriptions by Region]()
+![Subscriptions by Region](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/Subscriptions%20by%20Region%20Chart.png?raw=true)
 
 This report provides insights into regional demand:
-- The South region has the highest subscription count.
+- Subscriptions are evenly spread across regions, with a slight lead in the East.
 - Focusing on high-performing regions while improving marketing in lower-performing regions (e.g., West) could improve overall growth.
 
 ### 4 Data Sources
-Download the Customer Data
+[Download the Customer Data](https://docs.google.com/spreadsheets/d/1uX7hdUgaS2KxBFbtkl-cvrYSC24ZxpggIzeDtGaa34w/edit?usp=sharing)
 
 
 
