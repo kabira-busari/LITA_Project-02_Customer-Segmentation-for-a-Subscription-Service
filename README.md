@@ -31,7 +31,7 @@ The data contains customer information for a subscription service, with details 
 
 ## Analysis Steps
 
-### Excel Analysis
+### Google Sheet Analysis
 The initial analysis was conducted in Excel to identify key subscription patterns:
 1. **Subscription Patterns**: Created pivot tables to analyze the popularity and distribution of subscription types.
 2. **Average Subscription Duration**: Calculated the average subscription duration to understand typical customer lifespans.
