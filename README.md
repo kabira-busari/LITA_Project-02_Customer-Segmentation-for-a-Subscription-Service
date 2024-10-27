@@ -9,7 +9,7 @@
 - [Conclusion](#conclusion)
 
 ## Introduction
-This project analyzes customer data for a subscription-based service, aiming to identify customer segments, subscription trends, and key drivers of cancellations and renewals. The project concludes with an interactive Power BI dashboard that presents these insights, providing actionable information to improve customer retention and revenue.
+This project analyzes customer data for a subscription-based service, aiming to identify customer segments, subscription trends, and key drivers of cancellations and renewals. The project concludes with an interactive Power BI dashboard that presents these insights, providing actionable information to improve customer retention and revenue..
 
 ### 1.1 Project Objectives
 - Identify key customer segments and their behaviors.
