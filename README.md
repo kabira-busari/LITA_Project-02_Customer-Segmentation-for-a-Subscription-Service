@@ -53,7 +53,7 @@ This report highlights customer preferences for each subscription type:
 
 #### 3.2 Revenue by Subscription Type
 
-![Revenue by Subscription Type]()
+![Revenue by Subscription Type](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/Revenue%20by%20Subscription%20Type%20Chart.png?raw=true)
 
 This analysis shows the total revenue by subscription type:
 - Basic and Premium subscriptions drive the highest revenue.
