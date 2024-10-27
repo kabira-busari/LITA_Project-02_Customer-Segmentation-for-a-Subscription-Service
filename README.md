@@ -1,7 +1,7 @@
 # Customer Segmentation for a Subscription Service
 
 ### 1.1 Introduction
-This project analyzes customer data for a subscription service to identify key segments and trends, including customer behaviors, subscription types, and insights into cancellations and renewals. The goal is to create an interactive Power BI dashboard that presents these findings, allowing stakeholders to explore subscription patterns and key business metrics.
+This project analyzes customer data for a subscription service to identify key segments and trends, including customer behaviors, subscription types, and insights into cancellations and renewals.
 
 The analysis was completed in three steps:
 - Excel: I explored customer subscription data using pivot tables to identify patterns, calculate subscription duration averages, and determine popular subscription types.
