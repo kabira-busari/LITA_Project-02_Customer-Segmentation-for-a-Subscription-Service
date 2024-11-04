@@ -18,15 +18,15 @@ This project analyzes customer data for a subscription-based service, aiming to 
 - Present insights via a Power BI dashboard for data-driven decision-making.
 
 ### 1.2 Tools Used
-- Excel: Initial data exploration and pivot tables for summary analysis.
-- SQL Server: Extract and query insights for a deeper understanding of customer trends.
-- Power BI: Interactive dashboard for visualizing customer segments and trends.
+- **Google Sheets**: Initial data exploration and pivot tables for summary analysis.
+- **SQL Server**: Extract and query insights for a deeper understanding of customer trends.
+- **Power BI**: Interactive dashboard for visualizing customer segments and trends.
 
 ### 1.3 Dataset
 The dataset includes:
-- Customer Details: Unique identifiers, names, and regions.
-- Subscription Information: Types, start and end dates, and cancellation status.
-- Revenue: Transactional revenue data by customer.
+- **Customer Details**: Unique identifiers, names, and regions.
+- **Subscription Information**: Types, start and end dates, and cancellation status.
+- **Revenue**: Transactional revenue data by customer.
 
 
 
@@ -48,16 +48,17 @@ The Excel analysis aims to uncover subscription patterns, including the populari
 ![Subscription Type by Popularity](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/Subscription%20Types%20by%20Popularity%20Chart.png?raw=true)
 
 This report highlights customer preferences for each subscription type:
-- Basic subscription is the most popular, followed by Premium and Standard.
-- Insights suggest focusing marketing efforts on the Basic plan due to its high customer base.
+- **Basic** subscription is the most popular, followed by **Premium** and **Standard**.
+- Insights suggest focusing m arketing efforts on the Basic plan due to its high customer base.
 
 #### 3.2 Revenue by Subscription Type
 
 ![Revenue by Subscription Type](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/Revenue%20by%20Subscription%20Type%20Chart.png?raw=true)
 
 This analysis shows the total revenue by subscription type:
-- Basic and Premium subscriptions drive the highest revenue.
-- Despite Basic's popularity, Premium generates substantial revenue, indicating a potential area for upselling.
+- **Basic** subscriptions dominate with **$33.8 million** in revenue, indicating high popularity or volume.
+- **Premium** and **Standard** each contribute around **$16.9 million**, suggesting similar revenue potential.
+- Converting Basic subscribers to Premium or Standard could increase revenue per customer.
 
 #### 3.3 Subscription Duration by Type
 
@@ -72,7 +73,7 @@ This chart visualizes the average subscription duration by type:
 ![Subscriptions by Region](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/main/Subscriptions%20by%20Region%20Chart.png?raw=true)
 
 This report provides insights into regional demand:
-- Subscriptions are evenly spread across regions, with a slight lead in the East.
+- Subscriptions are evenly spread across regions, with a slight lead in the **East**.
 - Focusing on high-performing regions while improving marketing in lower-performing regions (e.g., West) could improve overall growth.
 
 ### 4 Data Sources
@@ -87,35 +88,38 @@ This report provides insights into regional demand:
 SQL queries were used to further explore customer data, identifying regional trends, cancellation rates, and revenue patterns by subscription type.
 
 ### 2 Methodology
-- Loaded data into SQL Server and validated for completeness.
+- Loaded data into PostgreSQL and validated for completeness.
 - Executed SQL queries to identify key metrics: customer counts by region, top subscription types, and high-risk segments.
 - Calculated totals for active vs. canceled subscriptions and average duration across all customers.
 
 ### 3 Key Reports
 #### 3.1 Total Customers by Region
 ```
-SELECT Region, COUNT(CustomerID) AS TotalCustomers
-FROM CustomerData
-GROUP BY Region;
+SELECT region, COUNT(DISTINCT customer_id) AS customers
+FROM customer_data
+GROUP BY region;
 ```
-- South has the highest customer count, suggesting it as a key focus region.
+- Each region has an equal number of unique customers (5), indicating a balanced distribution across all regions.
 
 #### 3.2 Most Popular Subscription Type
 ```
-SELECT SubscriptionType, COUNT(CustomerID) AS CustomerCount
-FROM CustomerData
-GROUP BY SubscriptionType
-ORDER BY CustomerCount DESC;
+SELECT subscription_type, COUNT(DISTINCT customer_id) AS customers
+FROM customer_data
+GROUP BY subscription_type
+ORDER BY customers DESC
+LIMIT 1;
 ```
-- Basic is the most popular subscription type by customer count.
+- **Basic** is the most popular subscription type with 10 unique customers, making it the most widely chosen plan among customers. 
 
 #### 3.3 Cancellations within Six Months
 ```
-SELECT CustomerID, SubscriptionType, Region
-FROM CustomerData
-WHERE Canceled = 1 AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6;
+SELECT DISTINCT customer_id, customer_name, subscription_type
+FROM customer_data
+WHERE canceled = TRUE
+  AND EXTRACT(MONTH FROM AGE(subscription_end, subscription_start)) <= 6;
 ```
-- Insights from this query could inform retention efforts for high-risk segments.
+- Customers who canceled within 6 months are spread across **Basic**, **Premium**, and **Standard** plans, indicating that early cancellations are not isolated to a specific subscription type.
+- Higher Churn in **Premium** and **Standard**. Many early cancellations are from Premium and Standard, indicating potential unmet expectations.
   
 #### 3.4 Average Subscription Duration
 ```
