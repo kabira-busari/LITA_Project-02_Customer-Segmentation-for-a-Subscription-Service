@@ -1,4 +1,4 @@
--- Create a table named sales_data to store sales information
+-- Create a table named customer_data to store sales information
 CREATE TABLE customer_data (
     customer_id INT,				-- Unique identifier for each customer.					
     customer_name VARCHAR(50),			-- Name of the customer.	
@@ -16,7 +16,7 @@ FROM 'C:\tmp\LITA_Capstone_Dataset - CustomerData.csv'
 DELIMITER ','
 CSV HEADER;
 
--- Select the first 10 records from the sales_data table
+-- Select the first 10 records from the customer_data table
 SELECT * 
 FROM customer_data 
 LIMIT 10;
