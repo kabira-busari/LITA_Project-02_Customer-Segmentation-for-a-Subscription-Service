@@ -142,6 +142,13 @@ WHERE
 - This suggests a standard annual or shorter subscription model in use.
 
 #### 3.6 Revenue by Subscription Type
+```
+SELECT subscription_type, SUM(revenue) AS total_revenue
+FROM customer_data
+GROUP BY subscription_type;
+```
+- **Basic** subscriptions have generated the highest revenue at **33,776,735**.
+- **Premium** and **Standard** subscriptions are relatively close in total revenue, with around **16.8** million each.
 
 #### 3.7 Top Regions for Cancellations
 ```
