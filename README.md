@@ -119,16 +119,31 @@ WHERE canceled = TRUE
   AND EXTRACT(MONTH FROM AGE(subscription_end, subscription_start)) <= 6;
 ```
 - Customers who canceled within 6 months are spread across **Basic**, **Premium**, and **Standard** plans, indicating that early cancellations are not isolated to a specific subscription type.
-- Higher Churn in **Premium** and **Standard**. Many early cancellations are from Premium and Standard, indicating potential unmet expectations.
   
 #### 3.4 Average Subscription Duration
 ```
-SELECT AVG(DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd)) AS AvgSubscriptionDuration
-FROM CustomerData;
+SELECT AVG(
+    EXTRACT(YEAR FROM AGE(subscription_end, subscription_start)) * 12 +
+    EXTRACT(MONTH FROM AGE(subscription_end, subscription_start))) 
+	AS AvgSubscriptionDuration
+FROM customer_data;
 ```
-- Average subscription duration is approximately 12 months.
+- On average, customers maintain their subscription for 12 months (or 1 year).
 
-#### 3.5 Top Regions for Cancellations
+#### 3.5 Subscriptions Longer Than 12 Months
+```
+SELECT customer_id, customer_name, subscription_type
+FROM customer_data
+WHERE 
+    EXTRACT(YEAR FROM AGE(subscription_end, subscription_start)) * 12 +
+    EXTRACT(MONTH FROM AGE(subscription_end, subscription_start)) > 12;
+```
+- The analysis found that all customers have subscriptions of 12 months or less. No subscriptions exceed a one-year duration.
+- This suggests a standard annual or shorter subscription model in use.
+
+#### 3.6 Revenue by Subscription Type
+
+#### 3.7 Top Regions for Cancellations
 ```
 SELECT Region, COUNT(CustomerID) AS Cancellations
 FROM CustomerData
@@ -138,6 +153,8 @@ ORDER BY Cancellations DESC
 LIMIT 3;
 ```
 - South has the highest cancellations, indicating potential for improved retention strategies.
+
+#### 3.8 Active and Canceled Subscriptions
 
 ### 4 SQL Scripts
 View SQL Scripts
