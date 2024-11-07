@@ -172,7 +172,7 @@ GROUP BY cancelled;
 - Canceled Subscriptions (cancelled = true): There are 9 unique customers who have canceled their subscriptions.
 
 ### 4 SQL Scripts
-View SQL Scripts
+[View SQL Scripts]()
 
 
 
