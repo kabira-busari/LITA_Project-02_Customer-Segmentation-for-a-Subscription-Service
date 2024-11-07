@@ -1,10 +1,10 @@
 -- Create a table named sales_data to store sales information
 CREATE TABLE customer_data (
     customer_id INT,				-- Unique identifier for each customer.					
-    customer_name VARCHAR(50),		-- Name of the customer.	
-    region VARCHAR(20),			 	-- Geographic region of the customer.
-    subscription_type VARCHAR(20),	-- Type of subscription (e.g., Basic, Premium, Standard).
-    subscription_start DATE,		-- Start date of the subscription.
+    customer_name VARCHAR(50),			-- Name of the customer.	
+    region VARCHAR(20),				 -- Geographic region of the customer.
+    subscription_type VARCHAR(20),		-- Type of subscription (e.g., Basic, Premium, Standard).
+    subscription_start DATE,			-- Start date of the subscription.
     subscription_end DATE,			-- End date of the subscription.
     cancelled BOOLEAN,				-- Boolean indicating if the subscription was canceled.
     revenue NUMERIC(10, 2)			-- Revenue generated from each subscription.
