@@ -199,33 +199,33 @@ Build an interactive dashboard to enable stakeholders to explore key metrics, cu
 ---
 ## Insights & Findings
 #### 1. Subscription Type Preferences
-- Basic Plan is Most Popular: The Basic plan has the most subscribers and generates the most revenue, making it a key focus for the business.
-- Upsell Opportunity: Upgrading Basic subscribers to Premium or Standard plans could increase revenue.
+- The Basic plan has the most subscribers and generates the most revenue, making it a key focus for the business.
+- Upgrading Basic subscribers to Premium or Standard plans could increase revenue.
 
 #### 2. Regional Demand:
-- High Demand in the East: The East region has a slightly higher demand for subscriptions, so it’s worth focusing more marketing efforts there.
-- Cancellation Spread Across Regions: Since cancellations are similar across regions, it might help to look at ways to keep customers engaged in all areas.
+- The East region has a slightly higher demand for subscriptions, so it’s worth focusing more marketing efforts there.
+- Since cancellations are similar across regions, it might help to look at ways to keep customers engaged in all areas.
 
 #### 3. Subscription Length:
-- Most Subscriptions Last One Year: On average, subscriptions are kept for about 12 months.
-- Early Cancellations: Some customers cancel within six months, so it may be helpful to improve the customer experience early on.
+- On average, subscriptions are kept for about 12 months.
+- Some customers cancel within six months, so it may be helpful to improve the customer experience early on.
 
 #### 4. Revenue by Plan:
-- Basic Plan Drives the Most Revenue: Basic plans bring in the highest revenue, with Premium and Standard plans close behind.
-- Retention is Key: Focusing on keeping customers on any plan longer would help maintain steady revenue.
+- Basic plans bring in the highest revenue, with Premium and Standard plans close behind.
+- Retention is Key. Focusing on keeping customers on any plan longer would help maintain steady revenue.
 
 #### 5. Active vs. Canceled Subscriptions:
-- High Cancellation Rate: Nearly half of customers cancel their subscriptions, so there’s room to improve retention and keep more customers active.
+- There's high Cancellation Rate. Nearly half of customers cancel their subscriptions, so there’s room to improve retention and keep more customers active.
 
 
 
 
 ---
-## Conclusion
-- Subscription Strategy: Prioritize the Basic plan due to its high popularity, but consider upselling opportunities for Premium.
-- Regional Focus: Improve customer experience and retention in the South, while boosting marketing efforts in underperforming regions.
-- Retention Improvement: Develop strategies to extend customer lifecycle beyond the 12-month average, focusing on high-risk segments.
+## Recommendations
+- Focus on the Basic plan, as it’s the most popular. Keeping these subscribers engaged and offering upgrades to higher plans can increase revenue. 
+- Improving the customer experience early on will help reduce cancellations and keep customers longer. 
+- It’s also a good idea to invest in marketing in high-demand areas like the East region, while working to reduce cancellations across all regions.
 
-These insights support actionable strategies for growth, retention, and customer experience improvements.
+These steps can help the subscription service grow by retaining more customers and increasing revenue.
 
 
