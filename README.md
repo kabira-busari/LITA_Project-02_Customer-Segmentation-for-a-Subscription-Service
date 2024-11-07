@@ -172,7 +172,7 @@ GROUP BY cancelled;
 - Canceled Subscriptions (cancelled = true): There are 9 unique customers who have canceled their subscriptions.
 
 ### 4 SQL Scripts
-[View SQL Scripts]()
+[View SQL Scripts](https://github.com/kabira-busari/LITA_Project-02_Customer-Segmentation-for-a-Subscription-Service/blob/024d666e649de0d915a165441ce2d632cada9235/LITA_Customer_Database_PostgreSQL.sql)
 
 
 
