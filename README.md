@@ -152,16 +152,20 @@ GROUP BY subscription_type;
 
 #### 3.7 Top Regions for Cancellations
 ```
-SELECT Region, COUNT(CustomerID) AS Cancellations
-FROM CustomerData
-WHERE Canceled = 1
-GROUP BY Region
-ORDER BY Cancellations DESC
+SELECT region, COUNT(DISTINCT customer_id) AS cancellations
+FROM customer_data
+WHERE cancelled = TRUE
+GROUP BY region
+ORDER BY cancellations DESC
 LIMIT 3;
 ```
-- South has the highest cancellations, indicating potential for improved retention strategies.
+- The **North**, **South**, and **West** regions all tied for the top spot with 3 unique cancellations each.
+- This indicates that there are 3 unique customers in each of these regions who have canceled their subscription, based on the available data.
 
 #### 3.8 Active and Canceled Subscriptions
+```
+
+```
 
 ### 4 SQL Scripts
 View SQL Scripts
