@@ -164,8 +164,12 @@ LIMIT 3;
 
 #### 3.8 Active and Canceled Subscriptions
 ```
-
+SELECT cancelled, COUNT(DISTINCT customer_id) AS subscription_count
+FROM customer_data
+GROUP BY cancelled;
 ```
+- Active Subscriptions (cancelled = false): There are 11 unique customers with active subscriptions.
+- Canceled Subscriptions (cancelled = true): There are 9 unique customers who have canceled their subscriptions.
 
 ### 4 SQL Scripts
 View SQL Scripts
