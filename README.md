@@ -5,7 +5,7 @@
 - [Google Sheet Analysis](#google-sheet-analysis)
 - [SQL Queries Analysis](#sql-queries-analysis)
 - [Power BI Dashboard](#power-bi-dashboard)
-- [Insights & Findings](#insights--findings)
+- [Analysis Insights](#analysis-insights)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -197,7 +197,7 @@ Build an interactive dashboard to enable stakeholders to explore key metrics, cu
 
 
 ---
-## Insights & Findings
+## Analysis Insights
 #### 1. Subscription Type Preferences
 - The Basic plan has the most subscribers and generates the most revenue, making it a key focus for the business.
 - Upgrading Basic subscribers to Premium or Standard plans could increase revenue.
